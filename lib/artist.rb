@@ -8,11 +8,7 @@ class Artist
   extend Memorable::ClassMethods
   extend Findable
 
-
-
   @@artists = []
-
-
 
   def initialize
     @@artists << self
@@ -27,10 +23,6 @@ class Artist
   def add_song(song)
     @songs << song
     song.artist = self
-  end
-
-  def add_songs(songs)
-    songs.each { |song| add_song(song) }
   end
 
   def to_param
