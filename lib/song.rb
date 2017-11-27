@@ -19,4 +19,3 @@ include Paramable
     @@songs
   end
 end
-
