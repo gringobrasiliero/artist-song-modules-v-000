@@ -18,4 +18,3 @@ include Paramable
   def self.all
     @@songs
   end
-end
